@@ -1,5 +1,14 @@
+info:
+  build:
+    version: ${version}
+
+spring:
+  application:
+    name: LypsisEurekaService
+
 server:
   port: 8761
+
 eureka:
   client:
     registerWithEureka: false

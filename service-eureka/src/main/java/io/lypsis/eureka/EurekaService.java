@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @EnableEurekaServer
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
-@ComponentScan(basePackages = { "io.lypsis.gateway" })
+@ComponentScan(basePackages = { "gateway" })
 public class EurekaService {
 
     public static void main(String[] args) {

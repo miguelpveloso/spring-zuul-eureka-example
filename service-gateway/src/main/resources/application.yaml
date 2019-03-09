@@ -1,0 +1,13 @@
+info:
+  build:
+    version: ${version}
+
+spring:
+  application:
+    name: LypsisGatewayService
+
+zuul:
+  routes:
+    foos:
+      path: /foos/**
+      url: https://visualnuts.com

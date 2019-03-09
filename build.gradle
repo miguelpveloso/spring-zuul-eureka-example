@@ -13,3 +13,28 @@ buildscript {
 
 }
 
+subprojects {
+
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url "http://packages.confluent.io/maven" }
+    }
+
+    version '0.0.1-SNAPSHOT'
+    group 'io.lypsis'
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    dependencies {
+
+        implementation "org.projectlombok:lombok:${lombokVersion}"
+        annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+        testImplementation "org.projectlombok:lombok:${lombokVersion}"
+        testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+    }
+
+}

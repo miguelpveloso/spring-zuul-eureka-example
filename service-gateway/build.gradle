@@ -1,10 +1,5 @@
 buildscript {
 
-    ext {
-        zuulCloudVersion = '2.1.0.RELEASE'
-        zuulCoreVersion = '2.1.1'
-    }
-
     repositories {
         mavenCentral()
         jcenter()
@@ -40,12 +35,15 @@ repositories {
 
 dependencies {
 
-    compile 'org.springframework.boot:spring-boot-starter-web'
-    compile 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
 
-    compile("org.springframework.cloud:spring-cloud-netflix-zuul:${zuulCloudVersion}")
-    compile("com.netflix.zuul:zuul-core:${zuulCoreVersion}")
+    implementation "org.springframework.cloud:spring-cloud-starter-netflix-zuul:2.0.2.RELEASE"
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 
+}
+
+configurations.all {
+    exclude group: 'org.slf4j', module: 'slf4j-log4j12'
 }

@@ -8,10 +8,10 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableZuulProxy
 @SpringBootApplication
 @ComponentScan(basePackages = { "io.lypsis.gateway" })
-public class Gateway {
+public class GatewayService {
 
     public static void main(String[] args) {
-        SpringApplication.run( Gateway.class, args );
+        SpringApplication.run( GatewayService.class, args );
     }
 
 }
