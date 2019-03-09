@@ -1,0 +1,50 @@
+buildscript {
+
+    ext {
+        eurekaVersion = '2.0.2.RELEASE'
+    }
+
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url "http://packages.confluent.io/maven" }
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+
+}
+
+
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.0.5.RELEASE'
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'io.lypsis'
+version = "${version}"
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url "http://packages.confluent.io/maven" }
+}
+
+dependencies {
+
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-security'
+
+    compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:${eurekaVersion}")
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+
+}

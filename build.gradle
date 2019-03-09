@@ -1,0 +1,15 @@
+buildscript {
+
+    ext {
+        mapstructVersion = '1.2.0.Final'
+        lombokVersion = '1.18.4'
+        springBootVersion = '2.0.5.RELEASE'
+    }
+
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+
+}
+
