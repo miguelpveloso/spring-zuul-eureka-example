@@ -3,13 +3,14 @@ package io.lypsis.gateway.filters;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
+import io.lypsis.commons.authorization.TokenHelper;
 import io.lypsis.gateway.exceptions.UnauthorizedException;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.http.HttpServletRequest;
 
 @Slf4j
-public class CustomPreFilter extends ZuulFilter {
+public class AuthorizationFilter extends ZuulFilter {
 
     @Override
     public String filterType() {

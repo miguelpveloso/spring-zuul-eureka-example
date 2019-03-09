@@ -5,10 +5,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(value = HttpStatus.UNAUTHORIZED)
-public class UnauthorizedException extends ZuulException {
+public class RoleUnauthorizedException extends ZuulException {
 
-    public UnauthorizedException(String e) {
-        super("Unauthorized exception", HttpStatus.UNAUTHORIZED.value(), e);
+    public RoleUnauthorizedException(String e) {
+        super("Role unauthorized exception", HttpStatus.UNAUTHORIZED.value(), e);
     }
 
 }

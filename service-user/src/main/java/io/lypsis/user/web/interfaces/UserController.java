@@ -1,8 +1,8 @@
-package io.lypsis.customer.web.interfaces;
+package io.lypsis.user.web.interfaces;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
-public interface CustomerController {
+public interface UserController {
 
     @RequestMapping("/greeting")
     String greeting();
