@@ -1,12 +1,13 @@
-package io.lypsis.customer;
+package io.lypsis.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-public class CustomerService {
-
+@EnableFeignClients
+public class ServiceUser {
     public static void main(String[] args) {
-        SpringApplication.run(CustomerService.class, args);
+        SpringApplication.run(ServiceUser.class, args);
     }
 }

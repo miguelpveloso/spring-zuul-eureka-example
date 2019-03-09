@@ -3,7 +3,10 @@ buildscript {
     ext {
         mapstructVersion = '1.2.0.Final'
         lombokVersion = '1.18.4'
+        netflixVersion = '2.0.2.RELEASE'
         springBootVersion = '2.0.5.RELEASE'
+        eurekaVersion = '2.0.2.RELEASE'
+        springCloudVersion = 'Finchley.SR2'
     }
 
     repositories {

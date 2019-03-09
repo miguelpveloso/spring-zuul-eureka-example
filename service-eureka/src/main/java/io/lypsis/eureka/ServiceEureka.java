@@ -9,10 +9,10 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableEurekaServer
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
 @ComponentScan(basePackages = { "gateway" })
-public class EurekaService {
+public class ServiceEureka {
 
     public static void main(String[] args) {
-        SpringApplication.run( EurekaService.class, args );
+        SpringApplication.run( ServiceEureka.class, args );
     }
 
 }

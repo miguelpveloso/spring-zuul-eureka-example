@@ -1,9 +1,5 @@
 buildscript {
 
-    ext {
-        eurekaVersion = '2.0.2.RELEASE'
-    }
-
     repositories {
         mavenCentral()
         jcenter()
@@ -15,7 +11,6 @@ buildscript {
     }
 
 }
-
 
 plugins {
     id 'java'
@@ -43,7 +38,7 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-security'
 
-    compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:${eurekaVersion}")
+    compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:${netflixVersion}")
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 

@@ -8,6 +8,6 @@ spring:
 
 zuul:
   routes:
-    foos:
-      path: /foos/**
-      url: https://visualnuts.com
+    user:
+      path: /user/**
+      url: http://localhost:8082

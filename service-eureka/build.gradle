@@ -1,10 +1,5 @@
 buildscript {
 
-    ext {
-        eurekaVersion = '2.0.2.RELEASE'
-        springCloudVersion = 'Finchley.SR2'
-    }
-
     repositories {
         mavenCentral()
         jcenter()
