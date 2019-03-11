@@ -1,0 +1,19 @@
+lypsis:
+  api:
+    base-path: /api
+    register-path: /register
+    login-path: /login
+    user-path: /user
+    customer-path: /customer
+    client-path: /client
+    person-path: /person
+    person-resume-path: /dr
+    people-path: /people
+    people-list-path: /peopleList
+    project-path: /project
+    context-path: /context
+    timesheet-path: /timesheet
+  jwt:
+    jwtSecret: c29jaWFsbnV0czIwMTc=
+    jwtLifetime: 86400
+    jwtRenewal: 7200

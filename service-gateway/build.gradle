@@ -42,6 +42,9 @@ dependencies {
 
     implementation "org.springframework.cloud:spring-cloud-starter-netflix-zuul:${netflixVersion}"
 
+    implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:${netflixVersion}")
+    implementation("org.springframework.cloud:spring-cloud-starter-openfeign:${netflixVersion}")
+
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 
 }
